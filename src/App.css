@@ -1,3 +1,7 @@
+body {
+  background-color: #333;
+}
+
 #root {
   /* display: flex;
   align-items: center;
@@ -20,6 +24,5 @@
 .square {
   width: 150px;
   height: 150px;
-  border: 2px solid white;
-  background-color: red;
+  border: solid 2px rgba(255, 255, 255, 0.75);
 }

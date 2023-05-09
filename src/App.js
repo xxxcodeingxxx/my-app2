@@ -4,7 +4,7 @@ import { useState } from "react";
 function Square({ value, onSquareClick }) {
   return (
     <button
-      className="square duration-700 ease-in-out hover:bg-red-500/75"
+      className="square duration-700 ease-in-out bg-primary hover:bg-primary/75"
       onClick={onSquareClick}
     >
       {value}
@@ -36,7 +36,7 @@ function Board({ xIsNext, squares, onPlay }) {
 
   return (
     <>
-      <div className="status text-darkness text-4xl my-2">{status}</div>
+      <div className="status text-primary text-4xl my-4">{status}</div>
       <div className="board-row text-white text-5xl">
         <Square value={squares[0]} onSquareClick={() => handleClick(0)} />
         <Square value={squares[1]} onSquareClick={() => handleClick(1)} />
@@ -82,7 +82,7 @@ export default function Game() {
     return (
       <li key={move}>
         <button
-          className="bg-green-500 py-2 px-4 my-1 rounded-full cursor-pointer shadow-lg duration-700 ease-in-out hover:bg-green-600"
+          className="bg-primary py-2 px-4 my-1 rounded-full cursor-pointer shadow-lg duration-700 ease-in-out hover:bg-pastel"
           onClick={() => jumpTo(move)}
         >
           {description}
